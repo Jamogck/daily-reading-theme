@@ -908,17 +908,55 @@ a.btn.btn-default.btn-lg {
 .site-footer {
 	margin-left: -15px;
 	margin-right: -15px;
-	height: 150px;
-	background: #FFC747;
-	display: flex;
+	font-family: Arial, 'sans-serif';
+    font-size: 12px;
 }
 
-.site-footer > .row {
+#main-footer {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	height: 150px;
+	padding-right: 15px;
+	padding-left: 15px;
+	background: #FFC747;
+}
+
+#main-footer > .row {
 	margin: auto;
 }
 
-.site-footer > .row > div {
-	
+#main-footer img {
+	height: 80px;
+}
+
+#sub-footer {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	height: 50px;
+	background: #215a81;
+	color: #FFF7E2;
+}
+
+#sub-footer svg {
+	height: 30px;
+	margin-left: 8px;
+	margin-right: 8px;
+	fill: #FFF7E2;
+	vertical-align: middle;
+}
+
+#sub-footer .row {
+	margin: auto;
+}
+
+#sub-footer p {
+	display: inline-block;
 }
 
 .social ul {
@@ -928,9 +966,8 @@ a.btn.btn-default.btn-lg {
 }
 
 .social li {
-	display: inline-block;
 	margin: 0 1em;
-	list-style: none;
+/*	list-style: none;*/
 }
 
 .social a {

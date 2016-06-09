@@ -26,7 +26,7 @@
 	<div id="content" class="site-content">
 		<div class="container-fluid">
 			<?php 
-				if (is_single()) {
+				if (is_single() || is_page_template( 'page_special.php' )) {
 					echo '<div id="site-title">
 							<h1><a href="/" title="Home">Live Sent Together</a></h1>
 						</div>';

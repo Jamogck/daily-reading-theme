@@ -62,6 +62,16 @@
                 <?php the_field( 'share_section' ); ?>
             </div>
         </div>
+        <?php 
+            $content = get_field('optional_text');
+            if($content) { 
+        ?>
+        <div class="row section blue-brdr">
+            <div class="inner center em">
+                <?php  echo $content ?>
+            </div>
+        </div>
+        <?php } ?>
     </div>
 </div> <!-- end container -->
 
